@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>calculator
+</title>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+td{
+text-align:center;
+border-radius:50px;
+background-color:pink;}
+*{
+font-size:20px;
+}
+input{
+border-radius:15px;
+box-shadow:0 5px 5px;
+}
+table{
+background-color:black;
+border-radius:5px;
+}
+.d{
+background-color:black;
+height:30px;
+width:85%;
+padding:20px;
+font-size:30px;
+color:white;
+font-weight:bold;
+border-radius:5px;
+}
+</style>
+</head>
+<body>
+<center><div class="d">CALCULATOR</div></center><br>
+<center><table border="1" cellspacing="10px" cellpadding="10px">
+<form>
+<tr><td colspan="4"><input type="text" name="calc" placeholder="RAO SAHAB"></td></tr>
+<tr>
+<td><input type="button"value="clear" onclick="calc.value=''"></td>
+<td><input type="button"value="back" onclick="calc.value=calc.value.toString().slice(0,-1)"></td>
+<td><input type="button"value="%" onclick="calc.value+='%'"></td>
+<td><input type="button"value="+" onclick="calc.value+='+'"></td>
+</tr>
+<tr>
+<td><input type="button"value="1" onclick="calc.value+='1'"></td>
+<td><input type="button"value="2" onclick="calc.value+='2'"></td>
+<td><input type="button"value="3" onclick="calc.value+='3'"></td>
+<td><input type="button"value="-" onclick="calc.value+='-'"></td>
+</tr>
+<tr>
+<td><input type="button"value="4" onclick="calc.value+='4'"></td>
+<td><input type="button"value="5" onclick="calc.value+='5'"></td>
+<td><input type="button"value="6" onclick="calc.value+='6'"></td>
+<td><input type="button"value="x" onclick="calc.value+='*'"></td>
+</tr>
+<tr>
+<td><input type="button"value="7" onclick="calc.value+='7'"></td>
+<td><input type="button"value="8" onclick="calc.value+='8'"></td>
+<td><input type="button"value="9" onclick="calc.value+='9'"></td>
+<td><input type="button"value="/" onclick="calc.value+='/'"></td>
+</tr>
+<tr>
+<td><input type="button"value="0" onclick="calc.value+='0'"></td>
+<td><input type="button"value="." onclick="calc.value+='.'"></td>
+<td colspan="2"><input type="button"value="=" onclick="calc.value=eval(calc.value)"></td>
+</tr>
+</form>
+</table></center>
+</body>
+</html>
